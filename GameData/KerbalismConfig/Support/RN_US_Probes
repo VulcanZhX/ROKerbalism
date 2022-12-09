@@ -1,0 +1,14 @@
+@PART[pioneer_10_11|rn_voyager|rn_new_horizons|rn_cassini|galileo_mb]:AFTER[RN_US_PROBES]
+{   
+  MODULE:NEEDS[ProfileRealismOverhaul]
+	{
+		name = ProcessController
+		resource = _RTG
+		title = RTG
+		capacity = #$../MODULE[ModuleGenerator]/OUTPUT_RESOURCE[ElectricCharge]/rate$
+		running = true
+		toggle = false
+	}
+
+  !MODULE[ModuleGenerator] {}
+}
